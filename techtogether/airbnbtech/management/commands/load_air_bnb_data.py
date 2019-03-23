@@ -1,15 +1,22 @@
 import csv
 from csv import DictReader
 import urllib.request
+import io
 
 from django.core.management import BaseCommand
 
 from airbnbtech.models import FinalLocation, Location, Transportation, Food
 
-crime_url = 'https://data.boston.gov/dataset/6220d948-eae2-4e4b-8723-2dc8e67722a3/resource/12cb3883-56f5-47de-afa5-3b1cf61b257b/download/tmp8npb60c9.csv'
+# crime_url = 'https://data.boston.gov/dataset/6220d948-eae2-4e4b-8723-2dc8e67722a3/resource/12cb3883-56f5-47de-afa5-3b1cf61b257b/download/tmp8npb60c9.csv'
+crime_url = 'https://raw.githubusercontent.com/CCalderon01/techtogether/crimedataadd/mock_data.csv'
 contents = urllib.request.urlopen(crime_url)
-crime_data = csv.reader(contents)
-print(type(crime_data))
+datareader = csv.reader(io.TextIOWrapper(contents))
+listData = list(datareader)
+
+index_offense_code = 1
+index_district = 4
+index_latitude = 14
+index_longitude = 15
 
 ALREADY_LOADED_ERROR_MESSAGE = """
 If you need to reload the airbnb data from the CSV file,
@@ -17,6 +24,16 @@ first delete the db.sqlite3 file to destroy the database.
 Then, run `python manage.py migrate` for a new empty
 database with tables"""
 
+def CheckDataValid(row_to_check):
+    data = []
+    for cell_t in row_to_check:
+        data.append(cell_t)
+    cell = data[index_district].replace("\'","")
+    cell = cell.replace(" ","")
+    if not cell:
+        return False
+    else:
+        return True
 
 class Command(BaseCommand):
     # Show this when the user types help
@@ -42,10 +59,20 @@ class Command(BaseCommand):
         #     location.price = row['price']
         #     location.review_rating = row['review_scores_location']
         #     location.save()
-        for row in crime_data:
-            if (row['OFFENSE_CODE'] < 3000) and (row['DISTRICT'] != None):
+        header = False
+        for row in listData:
+            # Checking if the row is a header --> skip
+            if not header:
+                header = True
+                continue
+            data = []
+            for cell in row:
+                data.append(cell)
+            if CheckDataValid(row):
                 crime = Crime()
-                crime.latitude = row['Lat']
-                crime.longitude = row['Long']
-                crime.offense_code = row['OFFENSE_CODE']
-                crime.save()
+                crime.latitude = data[self.index_latitude].replace("\'","")
+                crime.longitude = data[self.index_longitude].replace("\'","")
+                crime.district = data[self.index_district].replace("\'","")
+                crime.offense_code = int(data[self.index_offense_code].replace("\'",""))
+                if(crime.offense_code < 3000):
+                    crime.save()

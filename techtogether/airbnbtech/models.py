@@ -46,4 +46,5 @@ class Food (models.Model):
 class Crime(models.Model):
     latitude = models.IntegerField
     longitude = models.IntegerField
+    district = models.CharField(max_length = 10)
     offense_code = models.IntegerField

@@ -24,3 +24,7 @@ class TransportationAdmin(admin.ModelAdmin):
 @admin.register(Food)
 class FoodAdmin(admin.ModelAdmin):
     list_display = ['zip_code', 'name']
+
+@admin.register(Crime)
+class CrimeAdmin(admin.ModelAdmin):
+    list_display = ['latitude', 'longitude', 'offense_code']
