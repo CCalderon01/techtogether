@@ -2,7 +2,7 @@ from django.contrib import admin
 
 # Register your models here.
 
-from .models import FinalLocation, Location, Transportation, Food
+from .models import FinalLocation, Location, Transportation, Food, Crime
 
 @admin.register(FinalLocation)
 class FinalAdmin(admin.ModelAdmin):
@@ -27,4 +27,4 @@ class FoodAdmin(admin.ModelAdmin):
 
 @admin.register(Crime)
 class CrimeAdmin(admin.ModelAdmin):
-    list_display['name', 'frequency']
+    list_display = ['code', 'frequency']
