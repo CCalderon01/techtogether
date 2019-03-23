@@ -29,3 +29,6 @@ urlpatterns = [
     url(r'^recommendation/(\d+)/', views.recommendation, name ="recommendation"),
    
 ]
+
+{% url 'questions' question.id %}
+{% url 'recommendation' recommendation.id %}
