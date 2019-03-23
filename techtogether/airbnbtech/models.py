@@ -44,6 +44,8 @@ class Food (models.Model):
     zip_code =  models.IntegerField
     name = models.IntegerField
 
-class Crime (models.Model):
-    code = models.IntegerField
-    frequency = models.IntegerField
+class Crime(models.Model):
+    latitude = models.IntegerField
+    longitude = models.IntegerField
+    district = models.CharField(max_length = 10)
+    offense_code = models.IntegerField

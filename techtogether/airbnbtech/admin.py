@@ -27,4 +27,4 @@ class FoodAdmin(admin.ModelAdmin):
 
 @admin.register(Crime)
 class CrimeAdmin(admin.ModelAdmin):
-    list_display = ['code', 'frequency']
+    list_display = ['latitude', 'longitude', 'offense_code']
