@@ -1,3 +1,4 @@
+{% load static %}
 /*
 	Eventually by HTML5 UP
 	html5up.net | @ajlkn
@@ -42,7 +43,7 @@
 						},
 
 					// Delay.
-						delay: 6000
+						delay: 100
 
 				};
 

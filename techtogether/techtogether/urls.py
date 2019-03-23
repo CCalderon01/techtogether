@@ -24,7 +24,7 @@ from airbnbtech import views
 urlpatterns = [
     url('admin/', admin.site.urls),
     url(r'^$', views.home, name ='home'),
-    url(r'^questions/(\d+)/', views.questions, name = 'questions'),
+    url(r'^form', views.form, name = 'form'),
     url(r'^rating', views.rating, name = 'rating'),
     url(r'^recommendation/(\d+)/', views.recommendation, name ='recommendation')
 ]
