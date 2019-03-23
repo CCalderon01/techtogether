@@ -2,7 +2,12 @@ from django.shortcuts import render
 from django.http import HttpResponse
 from django.http import Http404
 
+from django.views.generic import TemplateView
+
 from .models import FinalLocation, Location, Food, Transportation, Crime
+
+class HomeView(TemplateView):
+    template_name = 'index.html'
 
 def home(request):
     location = Location.objects.all()
