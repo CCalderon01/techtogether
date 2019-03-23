@@ -14,7 +14,6 @@ datareader = csv.reader(io.TextIOWrapper(contents))
 listData = list(datareader)
 
 index_offense_code = 1
-index_district = 4
 index_latitude = 14
 index_longitude = 15
 
@@ -28,7 +27,7 @@ def CheckDataValid(row_to_check):
     data = []
     for cell_t in row_to_check:
         data.append(cell_t)
-    cell = data[index_district].replace("\'","")
+    cell = data[index_latitude].replace("\'","")
     cell = cell.replace(" ","")
     if not cell:
         return False
@@ -46,20 +45,24 @@ class Command(BaseCommand):
             return
         print("Loading airbnb data")
         for row in DictReader(open('./listings.csv')):
-            location = Location()
-            location.name = row['name']
-            location.url = row['listing_url']
-            location.id = row['id']
-            location.neighborhood = row['neighbourhood_cleansed']
-            location.zip_code = row['zipcode']
-            location.latitude = row['latitude']
-            location.longitude = row['longitude']
-            location.room_type = row['room_type']
-            location.accomodates = row['accommodates']
-            location.price = row['price']
-            location.review_rating = row['review_scores_location']
-            location.save()
+            try:
+                location = Location()
+                location.name = row['name']
+                location.url = row['listing_url']
+                location.id = row['id']
+                location.neighborhood = row['neighbourhood_cleansed']
+                location.zip_code = row['zipcode']
+                location.latitude = row['latitude']
+                location.longitude = row['longitude']
+                location.room_type = row['room_type']
+                location.accomodates = row['accommodates']
+                location.price = row['price'].strip("$").replace(",","")
+                location.review_rating = row['review_scores_rating']
+                location.save()
+            except ValueError:
+                continue
         header = True
+        print("Loading crime data")
         for row in listData:
             # Checking if the row is a header --> skip
             if header:
@@ -72,6 +75,9 @@ class Command(BaseCommand):
                 crime = Crime()
                 crime.latitude = data[index_latitude].replace("\'","")
                 crime.longitude = data[index_longitude].replace("\'","")
-                crime.offense_code = int(data[index_offense_code].replace("\'",""))
+                try:
+                    crime.offense_code = int(data[index_offense_code].replace("\'",""))
+                except ValueError:
+                    continue
                 if(crime.offense_code < 3000):
                     crime.save()
