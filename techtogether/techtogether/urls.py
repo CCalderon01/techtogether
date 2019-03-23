@@ -27,8 +27,8 @@ urlpatterns = [
     url(r'^questions/(\d+)/', views.questions, name = "questions"),
     url(r'^rating', views.rating, name = "rating"),
     url(r'^recommendation/(\d+)/', views.recommendation, name ="recommendation"),
-   
+
 ]
 
-{% url 'questions' question.id %}
-{% url 'recommendation' recommendation.id %}
+# {% url 'questions' question.id %}
+# {% url 'recommendation' recommendation.id %}
