@@ -31,7 +31,7 @@ class Command(BaseCommand):
             location.latitude = row['latitude']
             location.longitude = row['longitude']
             location.room_type = row['room_type']
-            location.accomodates = row['accomodates']
+            location.accomodates = row['accommodates']
             location.price = row['price']
             location.review_rating = row['review_scores_location']
-            pet.save()
+            location.save()
