@@ -12,13 +12,6 @@
 
 /* Import CSS */
 
-@import 'css/bootstrap/bootstrap.min.css';
-@import 'css/others/animate.css';
-@import 'css/others/magnific-popup.css';
-@import 'css/others/owl.carousel.min.css';
-@import 'css/others/font-awesome.min.css';
-@import 'css/others/pe-icon-7-stroke.css';
-
 /* Base CSS */
 
 * {
@@ -28,7 +21,7 @@
 
 #preloader {
     overflow: hidden;
-    background-color: rgba(52, 26, 121, 0.99);
+    background-color: rgba(6, 44, 66, 0.993);
     height: 100%;
     left: 0;
     position: fixed;
@@ -294,7 +287,7 @@ li {
 }
 
 .section-heading.dark span {
-    background-color: #7643ea;
+    background-color: rgba(6, 44, 66, 0.993);
 }
 
 .section-heading.dark h4 {
@@ -310,7 +303,7 @@ li {
     font-size: 18px;
     right: 0;
     width: 40px;
-    background-color: #341a79;
+    background-color: rgba(6, 44, 66, 0.993);
     color: #fff;
     text-align: center;
     height: 40px;
@@ -351,13 +344,13 @@ li {
 }
 
 .bg-default {
-    background-color: #341a79;
+    background-color: rgba(6, 44, 66, 0.993)
 }
 
 .dorne-btn {
     min-width: 180px;
     height: 52px;
-    background-color: #7643ea;
+    background-color: rgba(6, 44, 66, 0.993);
     border-radius: 0;
     padding: 0 15px;
     line-height: 50px;
@@ -371,7 +364,7 @@ li {
 .dorne-btn:hover,
 .dorne-btn:focus {
     color: #fff;
-    background-color: #5d25dd;
+    background-color:  rgba(6, 44, 66, 0.993)
     font-weight: 600;
 }
 
@@ -382,7 +375,7 @@ li {
     position: fixed;
     z-index: 99999;
     height: 120px;
-    background-color: #341a79;
+    background-color: rgba(6, 44, 66, 0.993);
     top: -200px;
     left: 0;
     -webkit-transition-duration: 500ms;
@@ -487,7 +480,7 @@ li {
 
 .navbar-nav .nav-link:hover,
 .navbar-nav .nav-item.active .nav-link {
-    color: #7643ea;
+    color: rgba(6, 44, 66, 0.993)
 }
 
 .dorne-search-btn > a,
@@ -512,7 +505,7 @@ li {
 }
 
 .dropdown-item:hover {
-    background-color: #7643ea;
+    background-color:rgba(6, 44, 66, 0.993);
     color: #fff;
 }
 
@@ -557,7 +550,7 @@ li {
     font-size: 12px;
     font-weight: 700;
     color: #fff;
-    background-color: rgba(144, 103, 238, 0.65);
+    background-color: rgba(6, 44, 66, 0.993);
     text-transform: uppercase;
     min-width: 100px;
     height: 44px;
@@ -568,13 +561,13 @@ li {
 
 .hero-search-form .nav-tabs .nav-link.active {
     color: #fff;
-    background-color: rgba(67, 25, 161, 0.65);
+    background-color: rgba(6, 44, 66, 0.993);
     border-color: transparent;
 }
 
 .hero-search-form .tab-content .tab-pane {
     padding: 35px;
-    background-color: rgba(67, 25, 161, 0.65);
+    background-color: rgba(6, 44, 66, 0.993);
 }
 
 .hero-search-form .tab-content .tab-pane h6 {
@@ -648,7 +641,7 @@ li {
 }
 
 .single-catagory-area {
-    background-color: #7643ea;
+    background-color: rgba(6, 44, 66, 0.993)
     text-align: center;
     padding: 60px 15px;
     -webkit-transition-duration: 500ms;
@@ -705,7 +698,7 @@ li {
     height: 70px;
     display: inline-block;
     line-height: 70px;
-    background-color: #7643ea;
+    background-color: rgba(6, 44, 66, 0.993)
     padding: 0 50px;
     font-size: 14px;
     text-transform: uppercase;
@@ -759,7 +752,7 @@ li {
     position: absolute;
     top: 20px;
     left: 20px;
-    background-color: #7643ea;
+    background-color: rgba(6, 44, 66, 0.993)
     height: 35px;
     font-size: 12px;
     line-height: 35px;
@@ -791,12 +784,12 @@ li {
 }
 
 .feature-favourite > a {
-    color: #7643ea;
+    color: rgba(6, 44, 66, 0.993)
     font-size: 24px;
 }
 
 .single-features-area:hover {
-    background-color: #7643ea;
+    background-color: rgba(6, 44, 66, 0.993)
     box-shadow: 3px 15px 30px rgba(0, 0, 0, 0.15);
 }
 
@@ -813,7 +806,7 @@ li {
     color: #fff;
     height: 70px;
     line-height: 70px;
-    background-color: #7643ea;
+    background-color: rgba(6, 44, 66, 0.993)
 }
 
 .ratings-map-area > a:last-child {
@@ -872,7 +865,7 @@ li {
     font-weight: 800;
     color: #fff;
     height: 50px;
-    background-color: #7643ea;
+    background-color: rgba(6, 44, 66, 0.993)
     text-align: center;
 }
 
@@ -945,7 +938,7 @@ li {
 }
 
 .single-feature-events-area:hover {
-    background-color: #7643ea;
+    background-color: rgba(6, 44, 66, 0.993)
 }
 
 .single-feature-events-area:hover .feature-events-content h5,
@@ -1078,7 +1071,7 @@ li {
 }
 
 .explore-search-form {
-    background-color: #7643ea;
+    background-color: rgba(6, 44, 66, 0.993)
     padding: 50px 40px;
 }
 
@@ -1100,7 +1093,7 @@ li {
     font-size: 12px;
     font-weight: 700;
     color: #fff;
-    background-color: rgba(144, 103, 238, 0.65);
+    background-color: rgba(6, 44, 66, 0.993)
     text-transform: uppercase;
     min-width: 100px;
     height: 44px;
@@ -1111,7 +1104,7 @@ li {
 
 .explore-search-form .nav-tabs .nav-link.active {
     color: #fff;
-    background-color: rgba(67, 25, 161, 0.65);
+    background-color: rgba(35, 212, 198, 0.993)
     border-color: transparent;
 }
 
@@ -1178,7 +1171,7 @@ li {
 }
 
 .map-ratings-review-area > a:nth-child(2) {
-    background-color: #7643ea;
+    background-color: rgba(6, 44, 66, 0.993);
 }
 
 .map-ratings-review-area > a:last-child {
@@ -1188,7 +1181,7 @@ li {
 
 .book-a-table-widget {
     padding: 50px 30px;
-    background-color: #7643ea;
+    background-color: rgba(6, 44, 66, 0.993);
 }
 
 .book-a-table-widget h6 {
@@ -1230,7 +1223,7 @@ li {
 }
 
 .opening-hours li:first-child p {
-    color: #7643ea;
+    color:rgba(6, 44, 66, 0.993);
 }
 
 .opening-hours li:last-child p {
@@ -1309,11 +1302,11 @@ li {
 
 .single-listing-nav li.active a,
 .single-listing-nav li a:hover {
-    color: #7643ea;
+    color: rgba(6, 44, 66, 0.993);
 }
 
 .single-listing-nav li.active a:after {
-    background-color: #7643ea;
+    background-color: rgba(6, 44, 66, 0.993);
     content: '';
     bottom: -2px;
     left: 0;
