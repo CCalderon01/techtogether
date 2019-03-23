@@ -61,6 +61,25 @@ class Command(BaseCommand):
                 location.save()
             except ValueError:
                 continue
+        print("Loading transportation data")
+        for row in DictReader(open('./MBTA_coordinates.csv')):
+            try:
+                transportation = Transportation()
+                transportation.latitude = row['Latitude']
+                transportation.longitude = row['Longitude']
+                transportation.name = row['Name']
+                transportation.save()
+            except ValueError:
+                continue
+        print("Loading food data")
+        for row in DictReader(open('./food.csv')):
+            try:
+                food = Food()
+                food.name = row['BusinessName']
+                food.zip_code = row['ZIP']
+                food.save()
+            except ValueError:
+                continue
         header = True
         print("Loading crime data")
         for row in listData:
