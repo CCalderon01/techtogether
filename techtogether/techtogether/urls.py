@@ -24,11 +24,10 @@ from airbnbtech import views
 urlpatterns = [
     url('admin/', admin.site.urls),
     url(r'^$', views.home, name ='home'),
-    url(r'^questions/(\d+)/', views.questions, name = "questions"),
-    url(r'^rating', views.rating, name = "rating"),
-    url(r'^recommendation/(\d+)/', views.recommendation, name ="recommendation"),
-
+    url(r'^questions/(\d+)/', views.questions, name = 'questions'),
+    url(r'^rating', views.rating, name = 'rating'),
+    url(r'^recommendation/(\d+)/', views.recommendation, name ='recommendation')
 ]
 
-# {% url 'questions' question.id %}
-# {% url 'recommendation' recommendation.id %}
+#{% url 'questions' questions.id %}
+#{% url 'recommendation' recommendation.id %}
