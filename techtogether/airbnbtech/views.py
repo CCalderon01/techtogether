@@ -6,13 +6,10 @@ from .models import FinalLocation, Location, Food, Transportation, Crime
 
 def home(request):
     location = Location.objects.all()
-    return render(request, 'html5up-eventually/index.html', {'location': location})
+    return render(request, 'index.html', {'location': location})
 
-def questions(request, id):
-    if question < 4:
-        return render (request, 'question{}.html'.format(id), {'question': question})
-    else:
-        raise Http404('Question not found')
+def form(request):
+    return render (request, 'form.html')
 
 def rating(request):
     food = Food.objects.all()

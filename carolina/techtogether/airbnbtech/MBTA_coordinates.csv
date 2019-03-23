@@ -1,0 +1,123 @@
+Line,Latitude,Longitude,Name
+Red,42.3949070477,-71.1409807205,Alewife Station
+Red,42.3960638548,-71.1220550537,Davis Station
+Red,42.3883461218,-71.1192440987,Porter Square Station
+Red,42.373939,-71.119106,Harvard Square Station
+Red,42.3651634477,-71.103322506,Central Station
+Red,42.3624602268,-71.0865855217,Kendall/MIT Station
+Red,42.3612710899,-71.0720801353,Charles/Massachusetts General Hospital Station
+Red,42.3561971861,-71.0622954369,Park Street Station
+Red,42.355295,-71.060788,Downtown Crossing Station
+Red,42.351709611,-71.0549998283,South Station
+Red,42.3429,-71.05713,Broadway Station
+Red,42.32955,-71.05696,Andrew Station
+Red,42.3214378629,-71.0523927212,JFK / UMass Station
+Red,42.311307017,-71.0532295704,Savin Hill Station
+Red,42.3002619819,-71.0607075691,Fields Corner Station
+Red,42.2927943769,-71.0657823086,Shawmut Station
+Red,42.285924,-71.064219,Ashmont Station
+Red,42.278420118,-71.0597419739,Cedar Grove Station
+Red,42.2721169516,-71.0627675056,Butler Station
+Red,42.2703465534,-71.0679495335,Milton Station
+Red,42.2700131096,-71.0732495785,Central Avenue Station
+Red,42.2678933186,-71.0830664635,Valley Road Station
+Red,42.2675678013,-71.0872292519,Capen Street Station
+Red,42.2674566487,-71.0931301117,Mattapan Station
+Red,42.2748161177,-71.0291755199,North Quincy Station
+Red,42.2656146622,-71.0194015503,Wollaston Station
+Red,42.250879,-71.004798,Quincy Center Station
+Red,42.2327515704,-71.0071492195,Quincy Adams Station
+Red,42.2087804241,-71.0013341904,Braintree Station
+Green,42.370582,-71.076884,Lechmere Station
+Green,42.3666775177,-71.0681641102,Science Park Station
+Green,42.365512,-71.061423,North Station
+Green,42.362498,-71.058996,Haymarket Station
+Green,42.359297,-71.059895,Government Center Station
+Green,42.3561971861,-71.0622954369,Park Street Station
+Green,42.3523914894,-71.0648703575,Boylston Street Station
+Green,42.351868,-71.070498,Arlington Station
+Green,42.349962,-71.078089,Copley Station
+Green,42.348097,-71.088396,Hynes Convention Center/ICA Station
+Green,42.348797,-71.095296,Kenmore Station
+Green,42.349297,-71.100796,Blandford Street Station
+Green,42.349648,-71.103825,Boston University East Station
+Green,42.3499335211,-71.1061871052,Boston University Central Station
+Green,42.350900862,-71.1140727997,Boston University West Station
+Green,42.3511308015,-71.1159074306,St. Paul Street Station (B)
+Green,42.3513448824,-71.1182141304,Pleasant Street Station
+Green,42.3517413265,-71.1212611198,Babcock Street Station
+Green,42.3520743376,-71.1248660088,Packards Corner Station
+Green,42.3502348256,-71.1310243607,Harvard Avenue Station
+Green,42.3487124302,-71.1341571808,Griggs Street/Long Avenue Station
+Green,42.3484428354,-71.1377835274,Allston Street Station
+Green,42.3484745525,-71.140294075,Warren Street Station
+Green,42.3436850916,-71.1428689957,Washington Street Station
+Green,42.3414964086,-71.1466240883,Sutherland Street Station
+Green,42.3403385961,-71.1513018608,Chiswick Road Station
+Green,42.338086352,-71.1533403397,Chestnut Hill Avenue Station
+Green,42.3395772832,-71.1577820778,South Street Station
+Green,42.3399420801,-71.1661934853,Boston College Station
+Green,42.3461353747,-71.1068093777,St. Marys Street Station
+Green,42.3449538585,-71.1110150814,Hawes Street Station
+Green,42.343997,-71.114596,Kent Street Station
+Green,42.3432251573,-71.1173450947,St. Paul Street Station ( C )
+Green,42.342097,-71.121396,Coolidge Corner Station
+Green,42.3412822942,-71.1246192455,Summit Avenue Station
+Green,42.340072,-71.128526,Brandan Hall Station
+Green,42.3396090047,-71.1313462257,Fairbanks Station
+Green,42.339339371,-71.1354231834,Washington Square Station
+Green,42.3384670186,-71.138792038,Tappan Street Station
+Green,42.337705683,-71.1419677734,Dean Road Station
+Green,42.3371346753,-71.1451220512,Englewood Avenue Station
+Green,42.335897474,-71.1507225037,Cleveland Circle Station
+Green,42.3452869056,-71.1043953896,Fenway Station
+Green,42.3404496202,-71.1108970642,Longwood Station
+Green,42.3320429602,-71.1181175709,Brookline Village Station
+Green,42.3312101639,-71.1258637905,Brookline Hills Station
+Green,42.3359609208,-71.141602993,Beaconsfield Station
+Green,42.3349378332,-71.1494028568,Reservoir Station
+Green,42.3266732129,-71.1655175686,Chestnut Hill Station
+Green,42.329354178,-71.1923182011,Newton Center Station
+Green,42.3216996408,-71.2061798573,Newton Highland Station
+Green,42.3191928749,-71.2169194221,Eliot Station
+Green,42.3262607466,-71.2311780453,Waban Station
+Green,42.3336847265,-71.2449216843,Woodland Station
+Green,42.3371108832,-71.2517344952,Riverside Station
+Green,42.3456358101,-71.0815858841,Prudential Station
+Green,42.342697,-71.085095,Symphony Station
+Green,42.3403227355,-71.0888922215,Northeastern University
+Green,42.3377215443,-71.0954797268,Museum of Fine Arts Station
+Green,42.335837,-71.100652,Longwood Medical Area Station
+Green,42.334097,-71.104996,Brigham Circle Station
+Green,42.3337481755,-71.1055862904,Fenwood Road Station
+Green,42.333224719,-71.1070775986,Mission Park Station
+Green,42.3319795095,-71.1120772362,Riverway Station
+Green,42.3300759568,-71.1113369465,Back of the Hill Station
+Green,42.3287592992,-71.1105966568,Heath Street Station
+Blue,42.361457,-71.062129,Bowdoin Station
+Blue,42.358897,-71.057795,State Station
+Blue,42.359456,-71.05357,Aquarium Station
+Blue,42.36886,-71.039926,Maverick Station
+Blue,42.3727334327,-71.035194397,Logan Airport Station
+Blue,42.380797,-71.023394,Wood Island Station
+Blue,42.386676,-71.006628,Orient Heights Station
+Blue,42.3884015915,-71.0003578663,Suffolk Downs Station
+Blue,42.3974187182,-70.992193222,Beachmont Station
+Blue,42.4071633648,-70.992193222,Revere Beach Station
+Blue,42.414246,-70.992144,Wonderland Station
+Orange,42.4353430165,-71.071189642,Oak Grove Station
+Orange,42.4273133438,-71.073871851,Malden Center Station
+Orange,42.4042955853,-71.0770046711,Wellington Station
+Orange,42.3857548427,-71.0770797729,Sullivan Square Station (Broadway Exit)
+Orange,42.3830128834,-71.0771012306,Sullivan Square Station (Cambridge Street Exit)
+Orange,42.3726383181,-71.0702776909,Community College Station
+Orange,42.352228,-71.062892,Chinatown Station
+Orange,42.349873,-71.063795,Tufts Medical Center Station
+Orange,42.3472772215,-71.0760390759,Back Bay Station
+Orange,42.3415519196,-71.0832166672,Massachusetts Avenue Station
+Orange,42.3356674788,-71.0905230045,Ruggles Station
+Orange,42.3315274209,-71.0954046249,Roxbury Crossing Station
+Orange,42.3227388088,-71.1000823975,Jackson Square Station
+Orange,42.3192008078,-71.1028289795,Stony Brook Station
+Orange,42.3105691548,-71.107313633,Green Street Station
+Orange,42.300362,-71.113411,Forest Hills Station
