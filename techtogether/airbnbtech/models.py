@@ -42,7 +42,7 @@ class Transportation (models.Model):
 
 class Food (models.Model):
     zip_code =  models.IntegerField(null=True)
-    name = models.IntegerField(null=True)
+    name = models.CharField(max_length = 40,default='')
 
 class Crime(models.Model):
     latitude = models.DecimalField(max_digits=9, decimal_places=6, default=0)

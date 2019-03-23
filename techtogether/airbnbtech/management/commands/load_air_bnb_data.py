@@ -71,6 +71,15 @@ class Command(BaseCommand):
                 transportation.save()
             except ValueError:
                 continue
+        print("Loading food data")
+        for row in DictReader(open('./food.csv')):
+            try:
+                food = Food()
+                food.name = row['BusinessName']
+                food.zip_code = row['ZIP']
+                food.save()
+            except ValueError:
+                continue
         header = True
         print("Loading crime data")
         for row in listData:
