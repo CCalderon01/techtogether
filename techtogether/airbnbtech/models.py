@@ -19,6 +19,7 @@ class FinalLocation(models.Model):
     crime_rate = models.IntegerField
     food_rate = models.IntegerField
     transport_rate =models.IntegerField
+    overall_match = models.IntegerField
 
 class Location  (models.Model):
     ROOM_TYPE = [('Entire Home', 'E'), ('Private Room', 'P'), ('Shared Space', 'S')]
