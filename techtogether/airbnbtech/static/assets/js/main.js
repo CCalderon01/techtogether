@@ -37,16 +37,16 @@
 
 					// Images (in the format of 'url': 'alignment').
 						images: {
-							'images/bg01.jpg': 'center',
-							'images/bg02.jpg': 'center',
-							'images/bg03.jpg': 'center'
 						},
 
 					// Delay.
-						delay: 100
+						delay: 6000
 
-				};
+            };
 
+            settings.images[static_url + 'images/bg01.jpg'] = 'center';
+            settings.images[static_url + 'images/bg02.jpg'] = 'center';
+            settings.images[static_url + 'images/bg03.jpg'] = 'center';
 			// Vars.
 				var	pos = 0, lastPos = 0,
 					$wrapper, $bgs = [], $bg,
