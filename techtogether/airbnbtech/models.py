@@ -42,3 +42,8 @@ class Transportation (models.Model):
 class Food (models.Model):
     zip_code =  models.IntegerField
     name = models.IntegerField
+
+class Crime(models.Model):
+    latitude = models.IntegerField
+    longitude = models.IntegerField
+    offense_code = models.IntegerField
