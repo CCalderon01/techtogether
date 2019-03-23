@@ -19,63 +19,43 @@
 <form id="msform">
   <!-- progressbar -->
   <ul id="progressbar">
-    <li class="active">Logistics</li>
-    <li>Travel Experience</li>
-    <li>Plan</li>
+    <li class="active">Getting Around</li>
+    <li>Neighborhood</li>
+    <li>Atmosphere</li>
   </ul>
   <!-- fieldsets -->
   <fieldset>
-    <h2 class="fs-title">Logistics</h2>
+    <h2 class="fs-title">Transportation</h2>
   </br>
-    <h3 class="fs-subtitle">I am arriving...</h3>
-    <select class="form-control" id="time">
-    <option>early morning</option>
-    <option>midday</option>
-    <option>late night</option>
-  </select>
-    <br><br><br>
-      <h3 class="fs-subtitle">How many days is your trip?</h3>
+      <h3 class="fs-subtitle">I prefer...</h3>
         <select class="form-control" id="days">
-        <option>1</option>
-        <option>2</option>
-        <option>3</option>
-        <option>4</option>
-        <option>5+</option>
+        <option>Taking Uber/Lyft</option>
+        <option>Public transportation</option>
       </select>
     <br><br>
-    <input type="button" name="next" class="next action-button" value="Next" />
-  </fieldset>
-  <fieldset>
-    <h2 class="fs-title">Your Travel Experience</h2><br><br>
-    <h3 class="fs-subtitle">I prefer to live in a safer neighborhood.</h3>
-    <select class="form-control" id="experience">
-      <option>agree</option>
-      <option>no preference</option>
-    </select><br><br><br>
     <h3 class="fs-subtitle">Are you good with directions and navigating public transit?</h3>
     <select class="form-control" id="publictransit">
       <option>yes</option>
       <option>no</option>
     </select><br><br><br>
-    <h3 class="fs-subtitle">I prefer...</h3>
-    <select class="form-control" id="publictransit">
-      <option>walking everywhere</option>
-      <option>I don't mind commuting</option>
-    </select><br><br>
+    <input type="button" name="next" class="next action-button" value="Next" />
+  </fieldset>
+  <fieldset>
+    <h2 class="fs-title">Neighborhood</h2><br><br>
+    <h3 class="fs-subtitle">I prefer to stay in a safer neighborhood.</h3>
+    <select class="form-control" id="experience">
+      <option>agree</option>
+      <option>no preference</option>
+    </select><br><br><br>
     <input type="button" name="previous" class="previous action-button" value="Previous" />
     <input type="button" name="next" class="next action-button" value="Next" />
   </fieldset>
   <fieldset>
-    <h2 class="fs-title">Trip Plan</h2><br>
-    <h3 class="fs-subtitle">I prefer to be in...</h3>
+    <h2 class="fs-title">Atmosphere</h2><br>
+    <h3 class="fs-subtitle">I want to stay...</h3>
     <select class="form-control" id="atmosphere">
-      <option>the heart of the city</option>
-      <option>peace and quiet</option>
-    </select><br><br><br>
-    <h3 class="fs-subtitle">I would rather...</h3>
-    <select class="form-control" id="nightlife">
-      <option>checkout the nightlife</option>
-      <option>be energized for sightseeing</option>
+      <option>close to restaurants and bars</option>
+      <option>no preference</option>
     </select><br><br><br>
     <input type="button" name="previous" class="previous action-button" value="Previous" />
     <input type="submit" name="submit" class="submit action-button" value="Submit" />
