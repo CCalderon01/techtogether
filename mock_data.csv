@@ -1,0 +1,6 @@
+'INCIDENT_NUMBER', 'OFFENSE_CODE', 'OFFENSE_CODE_GROUP', 'OFFENSE_DESCRIPTION', 'DISTRICT', 'REPORTING_AREA', 'SHOOTING', 'OCCURRED_ON_DATE', 'YEAR', 'MONTH', 'DAY_OF_WEEK', 'HOUR', 'UCR_PART', 'STREET', 'Lat', 'Long', 'Location'
+'I192021064', '01847', 'Drug Violation', 'DRUGS - POSS CLASS C - INTENT TO MFR DIST DISP', '', ' ', '', '2019-03-21 16:34:00', '2019', '3', 'Thursday', '16', 'Part Two', '', '', '', '(0.00000000, 0.00000000)'
+'I192021064', '02102', 'Operating Under the Influence', 'OPERATING UNDER THE INFLUENCE DRUGS', '', ' ', '', '2019-03-21 16:34:00', '2019', '3', 'Thursday', '16', 'Part Two', '', '', '', '(0.00000000, 0.00000000)'
+'I192021064', '02405', 'Disorderly Conduct', 'DISORDERLY CONDUCT', '', ' ', '', '2019-03-21 16:34:00', '2019', '3', 'Thursday', '16', 'Part Two', '', '', '', '(0.00000000, 0.00000000)'
+'I192021061', '03301', 'Verbal Disputes', 'VERBAL DISPUTE', 'E5', '549', '', '2019-03-21 21:35:11', '2019', '3', 'Thursday', '21', 'Part Three', 'WASHINGTON ST', '42.26181177', '-71.15640773', '(42.26181177, -71.15640773)'
+'I192021059', '03114', 'Investigate Property', 'INVESTIGATE PROPERTY', 'C11', '355', '', '2019-03-21 22:10:00', '2019', '3', 'Thursday', '22', 'Part Three', 'GIBSON ST', '42.29755533', '-71.0597091', '(42.29755533, -71.05970910)'
