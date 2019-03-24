@@ -11,14 +11,14 @@ from airbnbtech.forms import HomeForm
 def home(request):
     if request.method == 'POST':
         url = request.POST.get("url", "")
-        airbnb_url = url.split('/')[4].split("?")[0]
-        print(airbnb_url)
+        airbnb_id = url.split('/')[4].split("?")[0]
+        print(airbnb_id)
+        return render(request, 'rating.html', {'airbnb_id':airbnb_id})
 
     return render(request, 'index.html', {})
-    # location = Location.objects.all()
-    # return render(request, 'index.html')
 
 def form(request):
+    print(airbnb_id)
     return render (request, 'form.html')
 
 def rating(request):
