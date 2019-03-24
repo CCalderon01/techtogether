@@ -7,15 +7,15 @@
 -->
 <html>
 <head>
-    <title>Eventually by HTML5 UP</title>
+    <title>Homey - Boston</title>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
     <link rel="stylesheet" href="{% static 'assets/css/main.css' %}" />
 </head>
-<body class="is-preload">
+<body class="is-preload" style="padding: 15%;">
 
     <!-- Header -->
-    <header id="header">
+    <header id="header" >
         <h1>Homey</h1>
         <p>Elevating your Airbnb experience with a home that's right for you.</p>
     </header>
@@ -27,7 +27,11 @@
     </form>
 
     <!-- Scripts -->
+    <script>
+        var static_url = "{% get_static_prefix %}";
+    </script>
     <script src="{% static 'assets/js/main.js' %}"></script>
 
 </body>
 </html>
+
