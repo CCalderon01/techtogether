@@ -2,6 +2,12 @@ from django.db import models
 
 # Create your models here.
 
+class UserPreferences(models.Model):
+    top_preference = models.CharField(max_length = 30)
+    neighborhood = models.CharField(max_length = 30)
+    lower_price_range = models.DecimalField(max_digits=6, decimal_places=2)
+    upper_price_range = models.DecimalField(max_digits=6, decimal_places=2)
+
 class FinalLocation(models.Model):
     ROOM_TYPE = [('Entire Home', 'E'), ('Private Room', 'P'), ('Shared Space', 'S')]
     url = models.CharField(max_length = 50)

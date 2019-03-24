@@ -2,7 +2,11 @@ from django.contrib import admin
 
 # Register your models here.
 
-from .models import FinalLocation, Location, Transportation, Food, Crime
+from .models import FinalLocation, Location, Transportation, Food, Crime, UserPreferences
+
+@admin.register(UserPreferences)
+class UserPreferencesAdmin(admin.ModelAdmin):
+    list_display = ['top_preference', 'neighborhood', 'lower_price_range', 'upper_price_range']
 
 @admin.register(FinalLocation)
 class FinalAdmin(admin.ModelAdmin):
