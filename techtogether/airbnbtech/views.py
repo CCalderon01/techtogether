@@ -2,15 +2,8 @@ from django.shortcuts import render
 from django.http import HttpResponse
 from django.http import Http404
 
-from django.views.generic import TemplateView
-from airbnbtech.forms import HomeForm
-
 from .models import FinalLocation, Location, Food, Transportation, Crime
 
-class HomeView(TemplateView):
-    template_name = 'index.html'
-
-    def get(self, request):
 
 
 def home(request):
