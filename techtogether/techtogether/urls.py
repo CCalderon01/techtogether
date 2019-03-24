@@ -26,7 +26,7 @@ urlpatterns = [
     url(r'^$', views.home, name ='home'),
     url(r'^form', views.form, name = 'form'),
     url(r'^rating', views.rating, name = 'rating'),
-    url(r'^recommendation/(\d+)/', views.recommendation, name ='recommendation')
+    url(r'^recommendation', views.recommendation, name ='recommendation')
 ]
 
 #{% url 'questions' questions.id %}

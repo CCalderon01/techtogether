@@ -13,7 +13,8 @@
 <body>
 
   <!-- multistep form -->
-<form id="msform">
+<form id="msform" method="post" action="/recommendation">
+  {% csrf_token %}
   <!-- progressbar -->
   <ul id="progressbar">
     <li class="active">Getting Around</li>
@@ -25,15 +26,15 @@
     <h2 class="fs-title">Transportation</h2>
   </br>
       <h3 class="fs-subtitle">I prefer...</h3>
-        <select class="form-control" id="days">
-        <option>Taking Uber/Lyft</option>
-        <option>Public transportation</option>
-      </select>
+        <select class="form-control" id="days" name="transport_pref">
+          <option value='uber'>Taking Uber/Lyft</option>
+          <option value='public'>Public transportation</option>
+        </select>
     <br><br>
     <h3 class="fs-subtitle">Are you good with directions and navigating public transit?</h3>
-    <select class="form-control" id="publictransit">
-      <option>yes</option>
-      <option>no</option>
+    <select class="form-control" id="publictransit" name="publictransit">
+      <option value="yes">yes</option>
+      <option value="no">no</option>
     </select><br><br><br>
     <input type="button" name="next" class="next action-button" value="Next" />
   </fieldset>
