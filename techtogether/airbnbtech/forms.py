@@ -1,4 +1,4 @@
 from django import forms
 
 class HomeForm(forms.Form):
-    post = forms.CharField()
+    url = forms.CharField(label='Airbnb URL', max_length=100)
