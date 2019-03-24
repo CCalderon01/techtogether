@@ -8,6 +8,6 @@ def default_map(request):
     return render(request, 'explore.html', 
                   { 
                       'mapbox_access_token': mapbox_access_token ,
-                  }
+                  })
 
 # Create your views here.
