@@ -16,7 +16,7 @@ def home(request):
         print(request)
         # return form(request)
         # return render(request, 'djmaps/maps/templates/explore.html')
-        return render(request, 'rating.html', {'airbnb_id':airbnb_id, 'location':Location.objects.get(id=airbnb_id)})
+        return render(request, 'results/results.html', {'airbnb_id':airbnb_id, 'location':Location.objects.get(id=airbnb_id)})
 
     return render(request, 'index.html')
 
@@ -30,7 +30,7 @@ def form(request):
     return render (request, 'form.html')
 
 def rating(request):
-    return render(request, 'rating.html')
+    return render(request, 'results/results.html')
 
 def recommendation(request):
     # food = Food.objects.all()
