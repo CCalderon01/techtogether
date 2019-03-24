@@ -53,3 +53,18 @@ def calculate_food_rating():
         food_dict[zipcode] = food_dict[zipcode]*alpha
 
     return food_dict
+
+
+
+#Calculate density of crimes within 0.5 miles#
+crime_list=[]
+for row in range(175234):
+    crime_list.append((crime.iloc[row+1,3], crime.iloc[row+1,1])) #crime is the raw data
+crimes_within_halfmile=[]
+for crime in crime_list:
+    d=distance(crime[0], INSERT AIRBNB LATITUDE, crime1[0], INSERT AIRBNB LONGITUDE)
+    if d<0.5:
+        crimes_within_halfmile.append(crime)
+count_crimes=len(crimes_within_halfmile)
+print(count_crimes)
+
