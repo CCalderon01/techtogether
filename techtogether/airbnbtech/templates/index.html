@@ -21,9 +21,10 @@
     </header>
 
     <!-- Signup Form -->
-    <form action='' method="post">
+    <form action="" method="post">
         {% csrf_token %}
         <input type="text" name="url" id="url" placeholder="your Airbnb url" />
+        <br> <br>
         <input type="submit" value="Find my Airbnb" />
     </form>
 
@@ -35,4 +36,3 @@
 
 </body>
 </html>
-
